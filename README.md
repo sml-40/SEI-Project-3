@@ -91,5 +91,16 @@ As a team, we used SmartDraw to create the Entity Relationship Diagram. Based on
 #### Trello - Project Management
 We created a Trello board to help manage the team project. The to-do section helped us keep track of what was still pending. One of the team could then assign themselves to the cards and move the card along the board until the task was complete
 
-<img width="1399" alt="Screenshot 2023-02-17 at 09 20 43" src="https://user-images.githubusercontent.com/114579141/219604711-a7f46696-10e2-485e-93d4-acba3c634a4c.png">
+<img width="1000" alt="Trello Board" src="https://user-images.githubusercontent.com/114579141/219604711-a7f46696-10e2-485e-93d4-acba3c634a4c.png">
+
+## User Registration
+My task was to work on the User model and create
+![User Registration](https://imgur.com/ePvjfHD.gif)
+
+## User Login
+![User Login](https://imgur.com/PpPo37L.gif)
+<img src="https://user-images.githubusercontent.com/114579141/225934376-792812b2-8e51-4fbf-8fc7-628cfb7ab0fe.png"
+         alt="User Login" width="500" height="500">
+    
+
 
