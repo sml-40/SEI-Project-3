@@ -229,20 +229,7 @@ Finally, I initialised the isLoggedIn and username state from local storage in t
  - During this project, I also gained experience using the Mongo shell in the terminal for the first time. I learned how to use the mongosh command-line interface to interact with the MongoDB database, including using different references to access the database, collections, and documents.
  - Authentication - Using the Bcrypt library to hash and verify passwords in Node.js helped to deepen my understanding of the MERN stack.
 
+## Future Updates
 
-
-
-
-
-
-<img src="https://user-images.githubusercontent.com/114579141/225934376-792812b2-8e51-4fbf-8fc7-628cfb7ab0fe.png"
-         alt="User Login" width="500" height="500">
-
-
-
-
-
-
-    
-
-
+ - At present, a user can access certain pages on the app when they are not logged in. Specifically, I would want to restrict access to the profile and workout page unless the user is authenticated.
+ - In the future, I would like to add the ability for users to upload their own profile picture to the app. Currently, users can only select from a predefined set of images. To implement this feature, a good option would be to use Cloudinary, a cloud-based image and video management platform.
