@@ -41,53 +41,48 @@ Technologies Used
  - Trello
 
 
-## Brief
+## General Requirements
  - Build a full stack web application. Must be your own work.
  - Select a Project Idea of your own.
- - Use Express with React to build your application
- - Deploy on Heroku or a similar platform so application is live on the web
- - Craft a README.md file that explains your app to the world
+ - Use Express with React to build your application.
+ - Deploy on Heroku or a similar platform so application is live on the web.
+ - Craft a README.md file that explains your app to the world.
+
+### Project Planning
+ - Plan your application using:
+    - User Stories
+    - Wireframes
+ - Present your project idea along with your planning documentation for project approval.
+
  
 ## Technical Requirements
- - Have at least 2 models (more if it makes sense)
-   - Auth is a requirement
- - Have full CRUD on at least one of your models
- - Be able to Add/Delete on any remaining models
+ - Have at least 2 models (more if it makes sense).
+   - Auth is a requirement.
+ - Have full CRUD on at least one of your models.
+ - Be able to Add/Delete on any remaining models.
  - Have high quality code:
-   - Commit often and use meaningful commit messages
+   - Commit often and use meaningful commit messages.
    - Document your code well.
-   - Follow accepted naming conventions
-   - Consistent indentation
-   - Well-structured and readable code
+   - Follow accepted naming conventions.
+   - Consistent indentation.
+   - Well-structured and readable code.
    - Semantic naming of variables, functions, CSS classes, etc.
-   - Short and clear functions that do one thing
-   - Efficient code - if you have your MVP, refactor
-   - DRY (Don't Repeat Yourself) code
- - Be deployed on Heroku or a similar platform
+   - Short and clear functions that do one thing.
+   - Efficient code - if you have your MVP, refactor.
+   - DRY (Don't Repeat Yourself) code.
+ - Be deployed on Heroku or a similar platform.
  - Craft a README.md file that explains your app.
  
- ## Technologies
-  - MongoDB
-  - Express
-  - React.js
-  - Node.js
-  - JWT
-  - Bcrypt
-  - Axios
-  - Git + GitHub
-  - Bootstrap
-  - Toastify
-  - Awesome Fonts
- 
- 
-#### Planning
+Planning
+Once we had decided on the app that we wanted to create, we began by deciding on the pages a user of our website would need to navigate it, while also meeting our MVP.
 
 1. Login page (including authentication)
 2. New user registration page
-3. Profile Page / Dashboard (once logged in)
-4. Workout Page (MODEL e.g. type of exercise: string, reps: number, weight: number .....)
-5. General Blog/Article Page (e.g. food, workout tips etc.)
-   - Weight, water, calories intake, body measurements (MODEL e.g. weight: number, calories: number .....)
+3. Profile page
+4. Dashboard (once logged in), including exercises (edit/delete)
+5. Workout Page (MODEL e.g. type of exercise: string, reps: number, weight: number .....)
+6. Graph showing user workouts
+
 
 #### Wireframes
 As a team, we used Balsamiq to create our wireframes for the pages of the app. Planning these webpages enabled us to consider how the user would interact with them, which then helped us decide which information was necessary and the data needed in our schemas
