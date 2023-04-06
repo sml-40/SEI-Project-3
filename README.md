@@ -1,5 +1,5 @@
 # SEI Project 3 - Fitness Tracker App
-This project was built with my GA classmates [Ana Solcan](https://github.com/solcana), [Hal Evans](https://github.com/halevans), and [Ethan Berk](https://github.com/ethandb23)
+This project was built with my GA classmates [Ana Solcan](https://github.com/solcana), [Hal Evans](https://github.com/halevans), and [Ethan Berk](https://github.com/ethandb23). We created a full-stack Fitness Tracker app using React, Node.js, Express, and MongoDB.
 
 ![Fitness Tracker App](https://user-images.githubusercontent.com/114579141/225710155-369c9b4c-ff5c-4e3d-8354-fb5c4fd88958.png)
 
@@ -7,6 +7,39 @@ Fitness Tracker is an app that allows the user to keep track of their workouts. 
 
 ## Demo
 The App is deployed by Netlify and is available [here](https://fitness-tracker-ga-sei.netlify.app/user)
+
+## Getting Started/Code Installation
+
+To access and run the code for this project, follow these steps:
+ - Download or clone the project repository from GitHub. You can do this by clicking on the green "Code" button and selecting "Download ZIP" to download a zipped version of the code, or by copying the repository URL and running git clone in your terminal.
+ - Once you have the code downloaded or cloned, open the project folder in your code editor of choice.
+ - Open the index.html file in your web browser to view the project.
+ 
+## Timeframe
+8 days - group project
+
+Technologies Used
+ - React.js
+ - Node.js
+ - Express
+ - MongoDB/Mongoose
+ - Bootstrap
+ - Toastify
+ - Ant Design
+ - Fort Awesome icons
+ - Axios
+ - Chart.js
+ - Nodemon
+ - Bcrypt
+ - Body-parser middleware
+ - Passport
+ - JWT
+ - Dotenv
+ - Cors
+ - Git/GitHub
+ - Balsamiq
+ - Trello
+
 
 ## Brief
  - Build a full stack web application. Must be your own work.
