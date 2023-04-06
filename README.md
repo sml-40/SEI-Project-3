@@ -225,7 +225,7 @@ Finally, I initialised the isLoggedIn and username state from local storage in t
 ## Key Learnings
  - This was my second project where I used React and with the help of my colleagues I felt a lot more comfortable working with the components and passing props.
  - I also feel like I have a better understanding of React Lifecycles, especially after using the ComponentDidUpdate() method to track the passing of the username prop.
- - It was also interesting to use different error status codes and using Toastify for the associated error pop-up for the user. I felt like this practice helped with my understanding of backend web development. This webFX website in particular was a valuable resource.
+ - It was also interesting to use different error status codes and using Toastify for the associated error pop-up for the user. I felt like this practice helped with my understanding of backend web development. This [webFX]([url](https://www.webfx.com/web-development/glossary/http-status-codes/) website in particular was a valuable resource.
  - During this project, I also gained experience using the Mongo shell in the terminal for the first time. I learned how to use the mongosh command-line interface to interact with the MongoDB database, including using different references to access the database, collections, and documents.
  - Authentication - Using the Bcrypt library to hash and verify passwords in Node.js helped to deepen my understanding of the MERN stack.
 
