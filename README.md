@@ -83,9 +83,14 @@ Once we had decided on the app that we wanted to create, we began by deciding on
 5. Workout Page (MODEL e.g. type of exercise: string, reps: number, weight: number .....)
 6. Graph showing user workouts
 
+Since we were four group members, each of us decided to take ownership of a particular backend & frontend aspect of the app
+ - Ana developed the dashboard which would include details of the workouts the user has completed and allow the user to edit or delete exercises within the workout.
+ - Hal developed the users workout page where they could create a workout, and add, edit and delete exercises within the workout.
+ - Ethan proposed we create a graph to show the users workout progress.
+ - And I developed the user login, new user registration and user profile page, including authentication. 
 
-#### Wireframes
-As a team, we used Balsamiq to create our wireframes for the pages of the app. Planning these webpages enabled us to consider how the user would interact with them, which then helped us decide which information was necessary and the data needed in our schemas
+## Wireframes
+As a team, we used Balsamiq to create our wireframes for the pages of the app. Planning these webpages enabled us to consider how the user would interact with them, which then helped us decide which information was necessary and the data needed in our schemas.
 
 ![Wireframe for Login](/assets/Images/Login%20Page.png)
 
@@ -117,7 +122,7 @@ As a team, we used SmartDraw to create the Entity Relationship Diagram. Based on
 ![Entity Relationship Diagram](/assets/Images/ERD.png)
 
 #### Trello - Project Management
-We created a Trello board to help manage the team project. The to-do section helped us keep track of what was still pending. One of the team could then assign themselves to the cards and move the card along the board until the task was complete
+I created a Trello board to help manage the team project. The to-do section helped us keep track of what was still pending. The team could then assign themselves to the cards and move the card along the board until the task was complete.
 
 <img width="1000" alt="Trello Board" src="https://user-images.githubusercontent.com/114579141/219604711-a7f46696-10e2-485e-93d4-acba3c634a4c.png">
 
