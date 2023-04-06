@@ -126,14 +126,40 @@ I created a Trello board to help manage the team project. The to-do section help
 
 <img width="1000" alt="Trello Board" src="https://user-images.githubusercontent.com/114579141/219604711-a7f46696-10e2-485e-93d4-acba3c634a4c.png">
 
-## User Registration
-My task was to work on the User model and create
-![User Registration](https://imgur.com/ePvjfHD.gif)
+## Build Process
+
+ - Together, our team collaborated on the initial setup of the backend. We were all eager to use what we had learned in class and to construct the beginnings of the backend as a group before deciding which parts we would each handle.  
+ - With Ana as the driver, we pair-programmed in the backend:
+    - Creating the configuration folder, creating a base name for the MongoDB and setting up our development and test environments.
+    - We implemented middleware functions, for example the bodyparser middleware which parses JSON requests into JavaScript objects before they reach the route files. And the ‘.use’ method to set up middleware for Express apps and to mount imported routers.
+    - We created our schemas using referenced data for the User, Exercise, and Workout models:
+
+<img width="509" alt="user schema" src="https://user-images.githubusercontent.com/114579141/230321577-52e037d6-95c3-4979-b87a-d09bb91ac746.png">
+<img width="527" alt="exercise schema" src="https://user-images.githubusercontent.com/114579141/230321598-884e7ae8-090d-406a-984d-ef53729375b4.png">
+
+ - The workout model had embedded and referenced data, for example, we embedded the exercise schema data into the workout model. Hal then referenced the User in the workout model to connect the two models.
+
+<img width="807" alt="workout schema" src="https://user-images.githubusercontent.com/114579141/230321726-21f8d565-5b16-40e9-bdbb-88bf5074c153.png">
+
+ - I took ownership of adding the routes for full CRUD functionality and then testing them on Postman to ensure they worked as intended.
+ - After we had the initial setup of the backend we divided up our tasks. 
+ - My task was to work on the User model, and to create a user login page and user profile, and also the new user registration. I knew this would be challenging because we had touched on authentication the day before in class but we had not had a chance to practise yet, so I was excited to get started.
 
 ## User Login
+ - I began by creating a user profile component file in React. I wanted to have a user profile icon which I found using Ant Design Avatar.
+ 
 ![User Login](https://imgur.com/PpPo37L.gif)
+
+ - I wanted the profile page to allow the user to update their profile picture and for some of the users workout information to display dynamically:
+
 <img src="https://user-images.githubusercontent.com/114579141/225934376-792812b2-8e51-4fbf-8fc7-628cfb7ab0fe.png"
          alt="User Login" width="500" height="500">
+
+
+![User Registration](https://imgur.com/ePvjfHD.gif)
+
+
+
     
 
 
