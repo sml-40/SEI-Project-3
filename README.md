@@ -152,11 +152,46 @@ I created a Trello board to help manage the team project. The to-do section help
 
  - I wanted the profile page to allow the user to update their profile picture and for some of the users workout information to display dynamically:
 
+![Profile login](https://user-images.githubusercontent.com/114579141/230323355-a78b36de-ef0a-4284-a747-46c23c85b9e4.png)
+
+ - When the user clicks on their profile icon, a model appears to allow the user to change their avatar. Again, I used Ant Design for the basic modal. 
+ - I used a Bootstrap Form for the user login page, so that it was in keeping with the style for the rest of the site.
+ - I wanted a pop-up to appear after login to let the user know if they had logged in successfully or if there was an error. I used Toastify in the Axios call for this as it was a perfect solution to make these customizable pop-ups:
+ 
+ ![toast error](https://user-images.githubusercontent.com/114579141/230324143-8d95a503-5961-449c-b1f8-bced8a767d0b.png)
+
+### Backend development for Login Route
+
+In the backend, I was responsible for developing the login route:
+
+![Login route](https://user-images.githubusercontent.com/114579141/230324719-2a5ab326-ebbc-490e-861a-ba3f3df1cf37.png)
+
+ - I thoroughly tested this route by console logging each step to ensure that it was functioning properly. 
+ - To search for the user in the database, I used MongooseJS queries documentation to learn how to use the findOne query. 
+ - Once the user was found, I used Bcrypt documentation to learn how to compare the password with the stored hash. 
+ - If the password was correct, I generated and sent a JWT using the user's ID as the payload. 
+ - I also added error handling to return appropriate status codes and error messages if the user didn't exist or if the supplied credentials were invalid.
+
+## User Registration
+ - If the user clicks the ‘Register’ button on the login page then this modal appears:
+
+![User Registration](https://imgur.com/ePvjfHD.gif)
+
+ - I used Toastify here for the pop-ups to let the user know if registration was successful or if there were errors.
+
+### Backend development for Register Route
+
+ - I was responsible for developing the register route in the backend. To ensure that everything was working properly, I extensively tested each step of the process by logging the output to the console.
+ - When developing the route, I referred to the MongooseJS queries documentation to create a query that would check whether a user with the given username, first name, or last name already existed in the database. If the user did not already exist, I created a new user object with the supplied information.
+ - To keep the user's password secure, I used the Bcrypt library to create a hashed password with plenty of salt. I referred to the Bcrypt documentation to learn how to use the genSalt() and hash() functions.
+ - Once the new user object had been created and the password hashed, I saved the user to the database and generated a JSON Web Token (JWT) using the user's ID as the payload. The token was then sent back to the client in the response.
+ - By thoroughly testing the register route and using documentation as needed, I was able to create a secure and functional route for users to create new accounts in the system.
+
 <img src="https://user-images.githubusercontent.com/114579141/225934376-792812b2-8e51-4fbf-8fc7-628cfb7ab0fe.png"
          alt="User Login" width="500" height="500">
 
 
-![User Registration](https://imgur.com/ePvjfHD.gif)
+
 
 
 
