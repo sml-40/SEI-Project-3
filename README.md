@@ -198,6 +198,36 @@ In the backend, I was responsible for developing the login route:
  - I used a ternary operator to check the isLoggedIn state of the component. If the user is logged in, the "Sign Out" link is displayed and clicking on it triggers the handleLogout method. If the user is not logged in, the "Login" link is displayed.
  - I added conditional rendering of the user's name in the NavBar component. If the user is logged in, the user's name is displayed.
 
+Challenges
+
+I faced a challenge when trying to display the username in the navbar after a user logs in, as the props were not passing correctly from the parent component to the child component. To troubleshoot this, I used the componentDidUpdate() method and console.log to check if the props were being passed correctly, which they were:
+
+![comp did mount](https://user-images.githubusercontent.com/114579141/230327743-c1929a19-52f1-4a4d-b5c1-446286032525.png)
+ 
+After further investigation, I realised that the issue was caused by the user being redirected to a different page after logging in, which caused the props to be lost. To fix this, I used local storage and state to persist the user's login status and username across page refreshes.
+
+In the handleLogin() function of the App component, I set the username in state and also stored it in local storage. 
+
+![Screenshot 2023-04-06 at 09 59 02](https://user-images.githubusercontent.com/114579141/230328051-19bda4f6-f5ed-4a9b-a174-91e057db7fcb.png)
+
+In the handleLogout function, I removed the username and isLoggedIn from both state and local storage.
+
+![handle logout](https://user-images.githubusercontent.com/114579141/230328316-a96065f5-e246-4f3d-8f1c-6f833a875f3a.png)
+ 
+Finally, I initialised the isLoggedIn and username state from local storage in the constructor of the App component. This solution allowed the username to be displayed in the navbar consistently after a user logs in.
+
+## Wins
+
+ - Authentication - Working on the user authentication and profile features was an extremely rewarding experience for me, particularly when I viewed my first successfully hashed user password in the database.
+ - Implementing the routes for full CRUD functionality - This was an excellent opportunity for me to deepen my understanding of the MERN stack and RESTful API design. By taking ownership of these tasks and testing them thoroughly on Postman, I gained valuable experience in troubleshooting and debugging, which helped me to become a more effective developer. 
+ - Collaborating with my team - Collaborating on the initial backend setup and middleware was a great way to learn from others and share knowledge, which improved our collective understanding of the technologies we were working with.
+
+## Key Learnings
+ - This was my second project where I used React and with the help of my colleagues I felt a lot more comfortable working with the components and passing props.
+ - I also feel like I have a better understanding of React Lifecycles, especially after using the ComponentDidUpdate() method to track the passing of the username prop.
+ - It was also interesting to use different error status codes and using Toastify for the associated error pop-up for the user. I felt like this practice helped with my understanding of backend web development. This webFX website in particular was a valuable resource.
+ - During this project, I also gained experience using the Mongo shell in the terminal for the first time. I learned how to use the mongosh command-line interface to interact with the MongoDB database, including using different references to access the database, collections, and documents.
+ - Authentication - Using the Bcrypt library to hash and verify passwords in Node.js helped to deepen my understanding of the MERN stack.
 
 
 
