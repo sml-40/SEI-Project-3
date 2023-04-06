@@ -187,6 +187,24 @@ In the backend, I was responsible for developing the login route:
  - Once the new user object had been created and the password hashed, I saved the user to the database and generated a JSON Web Token (JWT) using the user's ID as the payload. The token was then sent back to the client in the response.
  - By thoroughly testing the register route and using documentation as needed, I was able to create a secure and functional route for users to create new accounts in the system.
 
+![register route](https://user-images.githubusercontent.com/114579141/230326245-f5124377-80aa-4349-9459-96539d555125.png)
+![register hash pass](https://user-images.githubusercontent.com/114579141/230326287-b07fecb0-5d9b-4ad2-a682-a0d0403a68bb.png)
+
+### Frontend NavBar Component
+ - I was responsible for dynamically rendering the NavBar component based on the user's authentication status, adding conditional rendering for the login and sign out links, and displaying the user's name if they are logged in:
+
+![Navar login](https://user-images.githubusercontent.com/114579141/230326841-60bd714c-8c14-41b1-bc99-00fcc5feda0d.png)
+
+ - I used a ternary operator to check the isLoggedIn state of the component. If the user is logged in, the "Sign Out" link is displayed and clicking on it triggers the handleLogout method. If the user is not logged in, the "Login" link is displayed.
+ - I added conditional rendering of the user's name in the NavBar component. If the user is logged in, the user's name is displayed.
+
+
+
+
+
+
+
+
 <img src="https://user-images.githubusercontent.com/114579141/225934376-792812b2-8e51-4fbf-8fc7-628cfb7ab0fe.png"
          alt="User Login" width="500" height="500">
 
